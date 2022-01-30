@@ -18,7 +18,7 @@
     window.addEventListener('load', async function() {
         var port = 3000
         var urls = await window.api.getUrls()
-        var text = ''
+        var text = 'http://kaillera-nl.emuparadise.org:27888/'
         for (var i=0; i<urls.length; i++) {
             text += '<li><a href="http://'+urls[i]+':'+port+'/" target="_blank" onclick="window.api.openExternal(this.href);event.preventDefault()">http://'+urls[i]+':'+port+'/</a></li>\n';
         }
